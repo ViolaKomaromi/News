@@ -1,0 +1,287 @@
+/* *,*::before,*::after{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+} */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* my css */
+
+body{
+    width: calc(100%-40px);
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: yellow;
+    margin: 30px;
+
+}
+header{
+    width: 100%;
+}
+header > div a:hover{
+    background-color: yellow;
+    color: black;
+    transition: 0.5s;
+    border: 3px 5px 3px solid yellow;
+}
+.topnav{
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 20px 20px 20px;
+
+}
+.topnav a {
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(12, 9, 9);
+    text-align: center;
+    text-decoration: none;
+}
+ /* .topnav .active a:hover {
+    background-color: yellow;
+    
+    transition: 0.5s;
+    
+  }  */
+  /* .topnav a .active{
+           background-color: yellow;
+           color: black;
+  } */
+
+.container{
+    position: absolute;
+    padding: 20px;
+    margin: 50px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+    display: flex;
+}
+
+.container{
+                             
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    float: left;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+.text1:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px yellow;
+    color: white;
+    transition: 0.5s;
+}
+.text2:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px yellow;
+    color: white;
+    transition: 0.5s;
+}
+.text3:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px yellow;
+    color: white;
+    transition: 0.5s;
+}
+
+.text1 .fas{
+    color:rgb(243, 243, 237);
+    font-size: 60px;
+
+}
+.text2 .fas{
+    color:rgb(243, 243, 235);
+    font-size: 60px;
+
+}
+.text3 .fas{
+    color: rgb(252, 252, 239);
+    font-size: 60px;
+
+}
+p {   padding: 20%;
+    margin: 20px;
+    text-align: center;
+    color: rgb(8, 3, 3);
+    text-shadow: 3px 3px 3px rgb(228, 224, 210);
+   
+    
+}
+/* p:hover{
+    text-transform: uppercase;
+    color: yellow;
+    font-size: 20px;
+} */
+
+
+.text1{
+    width: 100%;
+    height: 250px;
+    margin: 20px 20px 20px;
+    text-align: center;
+    overflow: hidden;
+    background-image: url("/home/dci/Desktop/Newspaper/mainelephents.jpg");
+    background-position: initial;
+    background-repeat: no-repeat;
+     background-position: center;
+    background-size: cover;
+}
+.text2{
+    width: 100%;
+    height: 250px;
+    margin: 20px 20px 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-image: url("/home/dci/Desktop/Newspaper/unnamed.jpg");
+    background-position: initial;
+    background-repeat: no-repeat;
+     background-position: center;
+    background-size: cover;
+}
+.text3{
+    width: 100%;
+    height: 250px;
+    margin: 20px 20px 20px;
+    text-align: center;
+    overflow: hidden;
+    background-image: url("/home/dci/Desktop/Newspaper/nat_geo_wildlife_photography.jpg.optimal.jpg");
+    background-position: initial;
+    background-repeat: no-repeat;
+     background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 1000px){
+
+    .container{
+        height: auto;
+        padding: 20px;
+    }
+    .topnav{
+        display: initial;
+        float: left;
+        /* color: yellow; */
+    }
+
+/* .container .text1{
+    display: table-column;
+}
+.container .text2{
+    display: table-column;
+}
+.container .text3{
+    display: table-column;
+} */
+}
+@media (max-width: 768px){
+
+    .container{
+        display: initial;
+        width: 100%;
+        height: 250px;
+        float: left;
+    }
+    .topnav{
+        /* display: initial; */
+        float: left;
+        /* color: yellow; */
+    }
+}
+@media (max-width: 480px){
+    .container{
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        margin: 30px;
+        padding: 30px;
+        text-align: center;
+        
+    }
+    /* .container .text1{
+        width: 50%;
+        height: 150px;
+        float: none;
+        display: table-column;
+    }
+    .container .text2{
+        width: 50%;
+        height: 150px;
+        float: none;
+        display: table-column;
+    }
+    .container .text2{
+        width: 50%;
+        height: 150px;
+        float: none;
+        display: table-column;
+    } */
+    /* .topnav{
+        display: initial;
+        float: left;
+        color: yellow;
+        display: table-row;
+    } */
+}
